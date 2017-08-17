@@ -204,12 +204,20 @@
 
 - (void)testEasylistFilterListsReloading
 {
-  [self performReloadTestWithFilterLists:@"easylist_content_blocker_v2" acceptableAdsEnabled:NO];
+#if TARGET_IPHONE_SIMULATOR
+    // Intentionally blank - As this test will always fail on simulator.
+#else
+    [self performReloadTestWithFilterLists:@"easylist_content_blocker_v2" acceptableAdsEnabled:NO];
+#endif
 }
 
 - (void)testEasylistPlusExceptionsFilterListsReloading
 {
-  [self performReloadTestWithFilterLists:@"easylist+exceptionrules_content_blocker_v2" acceptableAdsEnabled:YES];
+#if TARGET_IPHONE_SIMULATOR
+    // Intentionally blank - As this test will always fail on simulator.
+#else
+    [self performReloadTestWithFilterLists:@"easylist+exceptionrules_content_blocker_v2" acceptableAdsEnabled:YES];
+#endif
 }
 
 #pragma MARK: -
