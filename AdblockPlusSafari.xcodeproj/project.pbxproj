@@ -1345,11 +1345,12 @@
 			buildSettings = {
 				BUILD_NUMBER = 0;
 				CODE_SIGN_ENTITLEMENTS = AdblockPlusSafariExtension/AdblockPlusSafariExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AdblockPlusSafariExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.adblockplus.AdblockPlusSafari.AdblockPlusSafariExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Adblock Plus Extension App Store";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev org.adblockplus.ABPS.AdblockPlusExtension";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
